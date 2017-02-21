@@ -1,0 +1,231 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{orange}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Steve}{Bullock}
+%\title{Resumé title}                               % optional, remove / comment the line if not wanted
+%\address{University of Bristol,Faculty of Engineering}{Queens Building, University Walk}{Bristol, BS8 1TR, United Kingdom}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+%\phone[mobile]{+1~(234)~567~890}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[fixed]{+44~7977~216406}
+%\phone[fax]{+3~(456)~789~012}
+\email{steve@bullo.cc}                               % optional, remove / comment the line if not wanted
+\homepage{bullo.cc}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{bullox}                        % optional, remove / comment the line if not wanted
+%\social[xing]{john\_doe}                           % optional, remove / comment the line if not wanted
+\social[twitter]{bullox}                             % optional, remove / comment the line if not wanted
+%\social[github]{jdoe}                              % optional, remove / comment the line if not wanted
+%\social[gitlab]{jdoe}                              % optional, remove / comment the line if not wanted
+%\social[skype]{jdoe}                               % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{steve}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+%\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2017}{PhD Dynamics and Control}{University of Bristol}{UK}{}{Thesis: \textit{Multi-Body Control for Automated Aerial Refuelling}}
+\cventry{2006}{MEng (Hons) Aeronautical Engineering}{University of Bristol}{UK}{\textit{2:1}}{Dissertation: \textit{Development of a Micro-Unmanned Aerial Vehicle}}  % arguments 3 to 6 can be left empty
+%\section{Master thesis}
+%\cvitem{title}{\emph{Title}}
+%\cvitem{supervisors}{Supervisors}
+%\cvitem{description}{Short thesis abstract}
+
+\section{Work}
+\cventry{2010-date}{Teaching Fellow}{University of Bristol}{UK}{}{
+Teaching-focused academic pathway, alongside PhD research. Various responsibilities focused on improving teaching \& Learning across Faculty of Engineering and wider University.
+\begin{itemize}
+	\item Design and delivery of a range of first- and second-year units, trialling novel teaching approaches;
+	\item Improving student-facing resources through direct development, training and supporting colleagues, and sharing best practice;
+	\item Introduction of a digital Dynamic Lab Manual alongside physical and logistical restructuring of Engineering lab teaching (\pounds 400k+ multi-year project);
+	\item Introduction of Transition Maths programme for students from BTEC and Access routes;
+	\item Supporting school to university transition for first-year Engineers, including developing Study Skills programme promoting independent learning and resilience.
+\end{itemize}
+}
+\cventry{2009-2010}{Head of Science}{King Solomon Academy}{London, UK}{}{Founded a new school with six other engaging and inspirational teachers in challenging area.
+	\begin{itemize}%
+		\item Emphasis on developing enthusiastic learning culture and strong leadership team;
+		\item Set up Science department resources and programme;
+		\item Graded outstanding by Ofsted before end of first term.
+	\end{itemize}
+}
+\cventry{2007-2009}{Head of Physics}{Wembley High Technology College}{London, UK}{}{Trained and placed through intensive Teach First programme.
+	\begin{itemize}%
+		\item Tripled KS5 Physics applications;
+		\item Implemented whole-school e-learning system;
+		\item Transformed rigour and ambition of KS4 BTEC Science programme.
+	\end{itemize}
+}
+\cventry{2006-2007}{Science Teacher}{Wembley High Technology College}{London, UK}{}{Trained through intensive Teach First programme, \#3 \textit{Times} top graduate employer.}
+\cventry{2006-date}{Educational Consultant}{}{}{}{
+Wide range of Science- and Engineering-focused freelance projects, including:
+	\begin{itemize}%
+		\item Print, web and film-based resource development and consultation for clients including Google, Land Rover Ben Ainslie Racing, BP, EDF, RNLI;
+		\item Preliminary and semi-final judge for Google Global Science Fair 2011-2016;
+		\item Seminars, workshops, presentations and one-to-one sessions on learning-to-learn, training, event planning, and subject-based learning.
+	\end{itemize}
+}
+
+%\subsection{Miscellaneous}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description}
+
+\section{Additional positions}
+\cventry{2015-date}{Widening Participation Officer}{University of Bristol}{UK}{}{
+Responsible for recruitment, admission and progression of WP students across Faculty of Engineering. 
+	\begin{itemize}
+	\item Introduced Transition Maths programme to support students from Access and BTEC entry routes;
+	\item Developed Gateway to Engineering foundation programme;
+	\item Introduced partnerships with UK-wide colleges;
+	\item Allocation and monitoring of \pounds 20k+ budget for WP and Outreach.
+	\end{itemize}
+}
+\cventry{2015-date}{Senate Representative}{University of Bristol}{UK}{}{
+100-member governing body of the University, responsible for teaching and learning, examinations and research and enterprise.
+\begin{itemize}
+	\item Approval of new programmes, major changes, budgets;
+	\item Consultation and development of new \pounds 330m expansion strategy.
+\end{itemize}}
+\cventry{2011-date}{TEL Advocate}{University of Bristol}{UK}{}{
+Developing and showcasing best practice in teaching across University.}
+\cventry{2015-date}{Warden}{University of Bristol}{UK}{}{
+Semi-collegiate Halls structure, part of team of 11 Wardens.
+\begin{itemize}
+	\item Established and led 22-person pastoral support team across two brand-new private-partnership halls;
+	\item Responsible for well-being of 760 undergraduate and postgraduate residents;
+	\item Participated in Divisional Review ensuring value-for-money for \pounds 2 million pastoral budget.
+	\item Previously Senior Resident then Deputy Warden, wide range of remit and experience.
+\end{itemize}}
+
+
+
+
+\section{Teaching experience}
+\cvitem{University}{Dynamics and Control; Structures and Materials; Mechatronics and Computing; Advanced Vehicle Design and Systems Integration.}
+\cvitem{A-level}{Physics; Mathematics.}
+\cvitem{Key Stage 4}{GCSE Science (single/double/triple); BTEC Science (level 2).}
+\cvitem{Key Stage 3}{Science.}
+\cvitem{Key Stage 2}{Science.}
+
+
+
+\section{Interests}
+\cvitem{Technology}{Robotics; drones; physical/digital interfaces; human interaction.}
+\cvitem{Innovation}{Entrepreneurship; startups; positive impact.}
+\cvitem{Environment}{Social impact and responsibility; influence of technology.}
+\cvitem{Well-being}{Deliberate practice; self-development; mindfulness.}
+\cvitem{Creativity}{Music, singing, performing; digital/analogue arts.}
+\cvitem{Adventure}{Mountaineering; ocean rowing; expeditions and exploration.}
+
+
+
+%
+%\section{Computer skills}
+%\cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
+%\cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+%\cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+%%
+%\section{Interests}
+%\cvitem{hobby 1}{Description}
+%\cvitem{hobby 2}{Description}
+%\cvitem{hobby 3}{Description}
+%
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+%
+%\section{Extra 2}
+%\cvlistdoubleitem{Item 1}{Item 4}
+%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+%\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+\section{References}
+\cvitem{}{Available on request.}
+%\begin{cvcolumns}
+%  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+%  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+%  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+%\end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%%%%%%%%%PUBLICATIONS
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+%%%%%%%%%PUBLICATIONS
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%\clearpage
+%%-----       letter       ---------------------------------------------------------
+%% recipient data
+%\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+%\date{January 01, 1984}
+%\opening{Dear Sir or Madam,}
+%\closing{Yours faithfully,}
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+%\makelettertitle
+%
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+%
+%Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+%
+%Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+%
+%Albert Einstein discovered that $e=mc^2$ in 1905.
+%
+%\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+%
+%\makeletterclosing
+%
+%%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
