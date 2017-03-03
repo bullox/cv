@@ -1,72 +1,29 @@
-%% start of file `template.tex'.
-%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
-%
-% This work may be distributed and/or modified under the
-% conditions of the LaTeX Project Public License version 1.3c,
-% available at http://www.latex-project.org/lppl/.
-
-
-\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
-
-% moderncv themes
-\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
-\moderncvcolor{orange}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
-%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
-
-% character encoding
-%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
-%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
-
-% adjust the page margins
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{classic}
+\moderncvcolor{orange}
 \usepackage[scale=0.75]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
-%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
 \name{Steve}{Bullock}
-%\title{Resumé title}                               % optional, remove / comment the line if not wanted
-%\address{University of Bristol,Faculty of Engineering}{Queens Building, University Walk}{Bristol, BS8 1TR, United Kingdom}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
-%\phone[mobile]{+1~(234)~567~890}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
-%\phone[fixed]{+44~7977~216406}
-%\phone[fax]{+3~(456)~789~012}
-\email{steve@bullo.cc}                               % optional, remove / comment the line if not wanted
-\homepage{bullo.cc}                         % optional, remove / comment the line if not wanted
-\social[linkedin]{bullox}                        % optional, remove / comment the line if not wanted
-%\social[xing]{john\_doe}                           % optional, remove / comment the line if not wanted
-\social[twitter]{bullox}                             % optional, remove / comment the line if not wanted
-%\social[github]{jdoe}                              % optional, remove / comment the line if not wanted
-%\social[gitlab]{jdoe}                              % optional, remove / comment the line if not wanted
-%\social[skype]{jdoe}                               % optional, remove / comment the line if not wanted
-%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
-\photo[64pt][0.4pt]{steve}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+\email{steve@bullo.cc}
+\homepage{http://bullo.cc}
+\social[linkedin]{bullox}
+\social[twitter]{bullox}
+\photo[64pt][0.4pt]{steve}
 
-% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
-%   to show numerical labels in the bibliography (default is to show no labels)
-%\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
 \renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
-%   to redefine the bibliography heading string ("Publications")
-%\renewcommand{\refname}{Articles}
 
-% bibliography with mutiple entries
-%\usepackage{multibib}
-%\newcites{book,misc}{{Books},{Others}}
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
-%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 
 \section{Education}
-\cventry{2017}{PhD Dynamics and Control}{University of Bristol}{UK}{}{Pending viva Feb 2017. Thesis: \textit{Multi-Body Control for Automated Aerial Refuelling}}
-\cventry{2006}{MEng (Hons) Aeronautical Engineering}{University of Bristol}{UK}{\textit{2:1}}{Dissertation: \textit{Development of a Micro-Unmanned Aerial Vehicle}}  % arguments 3 to 6 can be left empty
-%\section{Master thesis}
-%\cvitem{title}{\emph{Title}}
-%\cvitem{supervisors}{Supervisors}
-%\cvitem{description}{Short thesis abstract}
+\cventry{2017}{PhD Dynamics and Control}{University of Bristol}{UK}{}{Thesis: \textit{Multi-Body Control for Automated Aerial Refuelling}}
+\cventry{2006}{MEng (Hons) Aeronautical Engineering}{University of Bristol}{UK}{\textit{2:1}}{Dissertation: \textit{Development of a Micro-Unmanned Aerial Vehicle}}
 
 \section{Work}
 \cventry{2010-date}{Teaching Fellow}{University of Bristol}{UK}{}{
@@ -80,14 +37,14 @@ Teaching-focused academic pathway, alongside PhD research. Various responsibilit
 \end{itemize}
 }
 \cventry{2009-2010}{Head of Science}{King Solomon Academy}{London, UK}{}{Founded a new school with six other engaging and inspirational teachers in challenging area.
-	\begin{itemize}%
+	\begin{itemize}
 		\item Emphasis on developing enthusiastic learning culture and strong leadership team;
 		\item Set up Science department resources and programme;
 		\item Graded outstanding by Ofsted before end of first term.
 	\end{itemize}
 }
 \cventry{2007-2009}{Head of Physics}{Wembley High Technology College}{London, UK}{}{Trained and placed through intensive Teach First programme.
-	\begin{itemize}%
+	\begin{itemize}
 		\item Tripled KS5 Physics applications;
 		\item Implemented whole-school e-learning system;
 		\item Transformed rigour and ambition of KS4 BTEC Science programme.
@@ -102,9 +59,6 @@ Wide range of Science- and Engineering-focused freelance projects, including:
 		\item Seminars, workshops, presentations and one-to-one sessions on learning-to-learn, training, event planning, and subject-based learning.
 	\end{itemize}
 }
-
-%\subsection{Miscellaneous}
-%\cventry{year--year}{Job title}{Employer}{City}{}{Description}
 
 \section{Additional positions}
 \cventry{2015-date}{Widening Participation Officer}{University of Bristol}{UK}{}{
@@ -140,16 +94,12 @@ Semi-collegiate Halls structure, part of team of 11 Wardens.
 	\item Best of Bristol Lectures Steering Group.
 \end{itemize}}
 
-
-
 \section{Teaching experience}
 \cvitem{University}{Dynamics and Control; Structures and Materials; Mechatronics and Computing; Advanced Vehicle Design and Systems Integration.}
 \cvitem{A-level}{Physics; Mathematics.}
 \cvitem{Key Stage 4}{GCSE Science (single/double/triple); BTEC Science (level 2).}
 \cvitem{Key Stage 3}{Science.}
 \cvitem{Key Stage 2}{Science.}
-
-
 
 \section{Interests}
 \cvitem{Technology}{Robotics; drones; physical/digital interfaces; human interaction.}
@@ -159,36 +109,8 @@ Semi-collegiate Halls structure, part of team of 11 Wardens.
 \cvitem{Creativity}{Music, singing, performing; digital/analogue arts.}
 \cvitem{Adventure}{Mountaineering; ocean rowing; expeditions and exploration.}
 
-
-
-%
-%\section{Computer skills}
-%\cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
-%\cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
-%\cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
-%%
-%\section{Interests}
-%\cvitem{hobby 1}{Description}
-%\cvitem{hobby 2}{Description}
-%\cvitem{hobby 3}{Description}
-%
-%\section{Extra 1}
-%\cvlistitem{Item 1}
-%\cvlistitem{Item 2}
-%\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
-%
-%\section{Extra 2}
-%\cvlistdoubleitem{Item 1}{Item 4}
-%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
-%\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
-%
 %\section{References}
 %\cvitem{}{Available on request.}
-%\begin{cvcolumns}
-%  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
-%  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
-%  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
-%\end{cvcolumns}
 
 % Publications from a BibTeX file without multibib
 %  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
@@ -232,6 +154,5 @@ Semi-collegiate Halls structure, part of team of 11 Wardens.
 %
 %%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
 \end{document}
-
 
 %% end of file `template.tex'.
